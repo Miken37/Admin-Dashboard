@@ -96,7 +96,7 @@ a{
 
 .content-container{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin-left: 40px;
     margin-right: 40px;
@@ -120,7 +120,7 @@ a{
 
 .project-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(400px, 1fr));
+    grid-template-columns: repeat(2 , minmax(300px, 1fr));
     gap: 30px;
     grid-row: 2/3;
 }
@@ -144,6 +144,8 @@ a{
     box-shadow: 2px 2px 5px gray;
     padding: 15px;
     max-height: 300px;
+    min-height: 250px;
+    max-width: 500px;
     border-left: 15px rgb(255, 177, 31) solid;
 }
 
@@ -171,6 +173,7 @@ a{
     max-height: 400px;
     max-width: 50%;
     font-size: 14px;
+    border: 2px black solid;
 }
 
 .announcements-container > .a-card {
@@ -184,10 +187,11 @@ a{
 
 .trending-container{
     grid-column: 2/3;
-    
+    grid-row: 3/4;
+    border: 2px black solid;
 }
 
-.trend{
+.trending-box{
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     box-shadow: 2px 2px 5px gray;
