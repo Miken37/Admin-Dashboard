@@ -91,6 +91,15 @@ li > div{
     min-width: 170px;
 }
 
+.header{
+    display: grid;
+    grid-template-columns: 800px 1fr 1.5fr;
+    grid-template-rows: 60px 140px;
+    box-shadow: 2px 2px 5px gray;
+    background-color: white;
+    padding-left: 40px;
+    max-height: 200px;
+}
 
 #top-bar{
     border-radius: 20px;
@@ -102,25 +111,94 @@ li > div{
     font-size: 18px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     outline: none;
-    margin: 20px;
-    margin-left: 50px;
+    margin: 15px;
 }
 
-#top-bar:hover{
-    border: 2px gray solid;
-}
-
-.header{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    box-shadow: 2px 2px 5px gray;
-    background-color: white;
+.search-area{
+    display: flex;
+    align-items: center;
+    max-height: 80px;
 }
 
 
 .greeting{
-    border: 2px black solid;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.greeting > img{
+    width: 80px;
+    height: 80px;
+    grid-row: 1/ span 2;
+}
+
+.name-container{
+    display: grid;
+}
+
+.greeting-text{
+    grid-column: 2/3;
+    font-size: 12px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.name-handle{
+    grid-column: 2/3;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.top-right-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.top-right-section> img {
+    width: 40px;
+    height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.name-top{
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.head-spacer{
+    grid-column: 3 / 4;
+    grid-row: 1 / span 2;
+}
+
+.header-buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.header-buttons > *{
+    max-width: 200px;
+    min-width: 120px;
+    min-height: 50px;
+    border-radius: 40px;
+    color: white;
+    background-color: var(--accent);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 30px;
+    border: none;
+}
+
+.header-buttons>*:hover{
+    background-color: rgb(218, 218, 218);
+    color: black;
 }
 
 a{
@@ -228,4 +306,14 @@ a{
 
 .center-container > h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.card-links > *{
+    color: black;
+    margin-right: 10px;
+}
+
+.card-links{
+    display: flex;
+    justify-content: flex-end;
 }
