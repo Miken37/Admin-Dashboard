@@ -1,6 +1,6 @@
 :root{
     --accent: rgb(47, 159, 211);
-    --page-font: 
+    --page-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -9,11 +9,11 @@ body{
 }
 
 p{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: var(--page-font);
 }
 
 h4{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--page-font);
 }
 
 .container{
@@ -27,7 +27,7 @@ h4{
     background-color: var(--accent);
     height: 100vh;
     color: white;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--page-font);
     font-weight: bold;
     font-size: 20px;
     grid-row: 1 / 4;
@@ -110,7 +110,7 @@ li > div{
     height: 2em;
     padding-left: 20px;
     font-size: 18px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--page-font);
     outline: none;
     margin: 15px;
 }
@@ -142,12 +142,12 @@ li > div{
 .greeting-text{
     grid-column: 2/3;
     font-size: 12px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--page-font);
 }
 
 .name-handle{
     grid-column: 2/3;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--page-font);
     font-size: 20px;
     font-weight: bold;
 }
@@ -167,7 +167,7 @@ li > div{
 
 .name-top{
     font-weight: bold;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--page-font);
 }
 
 .head-spacer{
@@ -306,7 +306,7 @@ a{
 }
 
 .center-container > h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--page-font);
 }
 
 .card-links > *{
