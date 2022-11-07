@@ -1,5 +1,6 @@
 :root{
     --accent: rgb(47, 159, 211);
+    --page-font: 
 }
 
 body{
@@ -8,7 +9,7 @@ body{
 }
 
 p{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h4{
